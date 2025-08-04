@@ -165,14 +165,13 @@ export default function LaunchingSoon() {
             <Image 
               src="/wirelogo.png" 
               alt="Wiranium" 
-              width={150}
-              height={150}
+              width={200}
+              height={200}
               style={{
-                height: '150px !important', 
+                height: '200px !important', 
                 width: 'auto !important', 
-                minHeight: '150px !important',
-                maxHeight: 'none !important',
-                border: '3px solid green'
+                minHeight: '200px !important',
+                maxHeight: 'none !important'
               }}
             />
           </div>

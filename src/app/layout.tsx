@@ -10,6 +10,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Wiranium - Return Shield for Shopify",
   description: "Reduce refund leaks and enable smarter automated decisions for your Shopify store. Install Wiranium today.",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({

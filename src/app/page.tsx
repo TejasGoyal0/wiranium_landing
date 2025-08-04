@@ -18,301 +18,36 @@ export default function Home() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center">
-                          <Image 
-              src="/wirelogo.png" 
-              alt="Wiranium" 
-              width={120}
-              height={120}
-              style={{
-                height: '120px !important',
-                width: 'auto !important',
-                minHeight: '120px !important',
-                maxHeight: 'none !important'
-              }}
-            />
+              <Image 
+                src="/wirelogo.png" 
+                alt="Wiranium" 
+                width={100}
+                height={100}
+                style={{
+                  height: '100px !important',
+                  width: 'auto !important',
+                  minHeight: '100px !important',
+                  maxHeight: 'none !important'
+                }}
+              />
             </div>
 
-            {/* Desktop Navigation */}+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-gray-700 hover:text-[#00cc88] font-medium transition-colors duration-200">
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-6">
+              <a href="#" className="text-gray-700 hover:text-[#00cc88] font-medium transition-colors duration-200 whitespace-nowrap">
                 Home
               </a>
-              <Link href="/pricing" className="text-gray-700 hover:text-[#00cc88] font-medium transition-colors duration-200">
+              <Link href="/pricing" className="text-gray-700 hover:text-[#00cc88] font-medium transition-colors duration-200 whitespace-nowrap">
                 Pricing
               </Link>
-              <Link href="/book-demo" className="text-gray-700 hover:text-[#00cc88] font-medium transition-colors duration-200">
+              <Link href="/book-demo" className="text-gray-700 hover:text-[#00cc88] font-medium transition-colors duration-200 whitespace-nowrap">
                 Book A Demo
               </Link>
             </div>
 
             {/* Desktop CTA Button */}
             <div className="hidden md:block">
-              <Link href="/launching-soon" className="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-[#00cc88] hover:bg-[#00b377] transition-colors duration-200 rounded-lg shadow-sm hover:shadow-md">
+              <Link href="/launching-soon" className="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-[#00cc88] hover:bg-[#00b377] transition-colors duration-200 rounded-lg shadow-sm hover:shadow-md whitespace-nowrap">
                 Install On Shopify
               </Link>
             </div>
@@ -414,21 +149,92 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-12">
-            See Return Shield in Action
-          </h2>
-          <div className="relative aspect-video bg-gray-100 rounded-xl overflow-hidden shadow-lg">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-20 h-20 bg-[#00cc88] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#00b377] transition-colors duration-200">
-                <PlayIcon className="w-8 h-8 text-white ml-1" />
+      {/* Features & Benefits Section */}
+      <section className="px-4 py-16 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4">
+              Why Choose Wiranium?
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Powerful features designed to protect your revenue and streamline your returns process
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Feature 1 */}
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="w-12 h-12 bg-[#00cc88]/10 rounded-lg flex items-center justify-center mb-4">
+                <ChartBarIcon className="w-6 h-6 text-[#00cc88]" />
               </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">AI-Powered Analytics</h3>
+              <p className="text-gray-600">
+                Advanced machine learning algorithms analyze return patterns and customer behavior to identify potential fraud and abuse.
+              </p>
             </div>
-            <div className="absolute bottom-4 left-4 text-sm text-gray-500">
-              YouTube Video Placeholder
+            
+            {/* Feature 2 */}
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="w-12 h-12 bg-[#00cc88]/10 rounded-lg flex items-center justify-center mb-4">
+                <CogIcon className="w-6 h-6 text-[#00cc88]" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Automated Workflows</h3>
+              <p className="text-gray-600">
+                Set up custom rules and automation to handle returns efficiently, reducing manual work and human error.
+              </p>
             </div>
+            
+            {/* Feature 3 */}
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="w-12 h-12 bg-[#00cc88]/10 rounded-lg flex items-center justify-center mb-4">
+                <CheckCircleIcon className="w-6 h-6 text-[#00cc88]" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Smart Declines</h3>
+              <p className="text-gray-600">
+                Automatically decline suspicious returns while approving legitimate ones, protecting your bottom line.
+              </p>
+            </div>
+            
+            {/* Feature 4 */}
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="w-12 h-12 bg-[#00cc88]/10 rounded-lg flex items-center justify-center mb-4">
+                <ShoppingCartIcon className="w-6 h-6 text-[#00cc88]" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Customer Segmentation</h3>
+              <p className="text-gray-600">
+                Categorize customers based on return behavior and create targeted strategies for different segments.
+              </p>
+            </div>
+            
+            {/* Feature 5 */}
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="w-12 h-12 bg-[#00cc88]/10 rounded-lg flex items-center justify-center mb-4">
+                <ArrowRightIcon className="w-6 h-6 text-[#00cc88]" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Real-time Monitoring</h3>
+              <p className="text-gray-600">
+                Get instant alerts and insights about return patterns, allowing you to act quickly and decisively.
+              </p>
+            </div>
+            
+            {/* Feature 6 */}
+            <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="w-12 h-12 bg-[#00cc88]/10 rounded-lg flex items-center justify-center mb-4">
+                <CheckCircleIcon className="w-6 h-6 text-[#00cc88]" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Easy Integration</h3>
+              <p className="text-gray-600">
+                Seamlessly integrates with your existing Shopify store. No complex setup or technical knowledge required.
+              </p>
+            </div>
+          </div>
+          
+          {/* CTA */}
+          <div className="text-center mt-12">
+            <Link href="/book-demo" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#00cc88] hover:bg-[#00b377] transition-all duration-300 rounded-xl shadow-lg hover:shadow-xl">
+              See Features in Action
+              <ArrowRightIcon className="ml-2 h-5 w-5" />
+            </Link>
           </div>
         </div>
       </section>
@@ -503,10 +309,10 @@ export default function Home() {
           
           {/* CTA Button */}
           <div className="text-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#00cc88] hover:bg-[#00b377] transition-colors duration-200 rounded-lg shadow-lg hover:shadow-xl">
+            <Link href="/book-demo" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#00cc88] hover:bg-[#00b377] transition-colors duration-200 rounded-lg shadow-lg hover:shadow-xl">
               Get Free Onboarding Assistance
               <ArrowRightIcon className="ml-2 h-5 w-5" />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -514,52 +320,41 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Company */}
             <div>
               <div className="flex items-center mb-4">
-                            <Image 
-              src="/wirelogo.png" 
-              alt="Wiranium" 
-              width={50}
-              height={50}
-              style={{
-                height: '50px !important',
-                width: 'auto !important',
-                minHeight: '50px !important',
-                maxHeight: 'none !important'
-              }}
-            />
+                <Image 
+                  src="/wirelogo.png" 
+                  alt="Wiranium" 
+                  width={200}
+                  height={200}
+                  style={{
+                    height: '200px !important',
+                    width: 'auto !important',
+                    minHeight: '200px !important',
+                    maxHeight: 'none !important'
+                  }}
+                />
               </div>
               <p className="text-gray-600 text-sm">
                 Protecting your Shopify store&apos;s revenue with intelligent return management.
               </p>
             </div>
             
-            {/* Quick Links */}
+            {/* Navigation Links */}
             <div>
-              <h3 className="text-sm font-semibold text-gray-900 mb-4">Quick Links</h3>
+              <h3 className="text-sm font-semibold text-gray-900 mb-4">Navigation</h3>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="text-gray-600 hover:text-[#00cc88] transition-colors">Tools</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00cc88] transition-colors">Product</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00cc88] transition-colors">Legal</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00cc88] transition-colors">Write Us?</a></li>
+                <li><a href="#" className="text-gray-600 hover:text-[#00cc88] transition-colors">Home</a></li>
+                <li><Link href="/pricing" className="text-gray-600 hover:text-[#00cc88] transition-colors">Pricing</Link></li>
+                <li><Link href="/book-demo" className="text-gray-600 hover:text-[#00cc88] transition-colors">Book A Demo</Link></li>
               </ul>
             </div>
             
-            {/* Social */}
+            {/* Contact & Social */}
             <div>
-              <h3 className="text-sm font-semibold text-gray-900 mb-4">Social</h3>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#" className="text-gray-600 hover:text-[#00cc88] transition-colors">LinkedIn</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00cc88] transition-colors">Reddit</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-[#00cc88] transition-colors">Medium</a></li>
-              </ul>
-            </div>
-            
-            {/* Contact */}
-            <div>
-              <h3 className="text-sm font-semibold text-gray-900 mb-4">Contact</h3>
+              <h3 className="text-sm font-semibold text-gray-900 mb-4">Contact & Social</h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <a href="mailto:founder@wiranium.com" className="text-gray-600 hover:text-[#00cc88] transition-colors">
@@ -570,6 +365,9 @@ export default function Home() {
                   <a href="tel:+916375113465" className="text-gray-600 hover:text-[#00cc88] transition-colors">
                     +91 6375113465
                   </a>
+                </li>
+                <li>
+                  <a href="#" className="text-gray-600 hover:text-[#00cc88] transition-colors">LinkedIn</a>
                 </li>
               </ul>
             </div>
