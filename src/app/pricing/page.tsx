@@ -3,6 +3,7 @@
 import { ArrowLeftIcon, CheckIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Pricing() {
   const [isYearly, setIsYearly] = useState(false);
@@ -119,7 +120,7 @@ export default function Pricing() {
 
           {/* Pricing Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {plans.map((plan, index) => (
+            {plans.map((plan) => (
               <div
                 key={plan.name}
                 className={`relative p-8 rounded-2xl border-2 transition-all duration-300 hover:scale-105 ${
@@ -179,7 +180,7 @@ export default function Pricing() {
 
                 {/* Features */}
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-gray-900 mb-4">What's included:</h4>
+                  <h4 className="font-semibold text-gray-900 mb-4">What&apos;s included:</h4>
                   <ul className="space-y-3">
                     {plan.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start">
@@ -211,9 +212,9 @@ export default function Pricing() {
           <div className="mt-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Everything you need to know about Wiranium's pricing and features
-              </p>
+                                  <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                      Everything you need to know about Wiranium&apos;s pricing and features
+                    </p>
             </div>
             
             <div className="max-w-3xl mx-auto">
@@ -235,7 +236,7 @@ export default function Pricing() {
                   </button>
                   <div className={`px-6 pb-4 transition-all duration-300 ${openFAQ === 0 ? 'block' : 'hidden'}`}>
                     <p className="text-gray-600 leading-relaxed">
-                      Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately and we'll prorate any billing adjustments.
+                      Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately and we&apos;ll prorate any billing adjustments.
                     </p>
                   </div>
                 </div>
@@ -301,7 +302,7 @@ export default function Pricing() {
                   </button>
                   <div className={`px-6 pb-4 transition-all duration-300 ${openFAQ === 3 ? 'block' : 'hidden'}`}>
                     <p className="text-gray-600 leading-relaxed">
-                      Each plan has a monthly return limit. If you exceed this limit, we'll notify you and you can upgrade to a higher plan.
+                      Each plan has a monthly return limit. If you exceed this limit, we&apos;ll notify you and you can upgrade to a higher plan.
                     </p>
                   </div>
                 </div>
@@ -323,7 +324,7 @@ export default function Pricing() {
                   </button>
                   <div className={`px-6 pb-4 transition-all duration-300 ${openFAQ === 4 ? 'block' : 'hidden'}`}>
                     <p className="text-gray-600 leading-relaxed">
-                      Absolutely. We use enterprise-grade security and are fully compliant with Shopify's security standards and GDPR requirements.
+                      Absolutely. We use enterprise-grade security and are fully compliant with Shopify&apos;s security standards and GDPR requirements.
                     </p>
                   </div>
                 </div>
@@ -353,9 +354,11 @@ export default function Pricing() {
       <footer className="px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <div className="flex items-center justify-center mb-4">
-            <img 
+            <Image 
               src="/wirelogo.png" 
               alt="Wiranium" 
+              width={150}
+              height={150}
               style={{
                 height: '150px !important', 
                 width: 'auto !important', 
@@ -366,7 +369,7 @@ export default function Pricing() {
             />
           </div>
           <p className="text-gray-600 text-sm">
-            Protecting your Shopify store's revenue with intelligent return management.
+            Protecting your Shopify store&apos;s revenue with intelligent return management.
           </p>
         </div>
       </footer>

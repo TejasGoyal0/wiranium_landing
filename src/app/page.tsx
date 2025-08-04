@@ -3,6 +3,7 @@
 import { PlayIcon, CheckCircleIcon, ArrowRightIcon, Bars3Icon, XMarkIcon, ShoppingCartIcon, ChartBarIcon, CogIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,19 +18,286 @@ export default function Home() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <img 
-                src="/wirelogo.png" 
-                alt="Wiranium" 
-                                  style={{
-                    height: '120px !important', 
-                    width: 'auto !important', 
-                    minHeight: '120px !important',
-                  maxHeight: 'none !important'
-                }}
-              />
+                          <Image 
+              src="/wirelogo.png" 
+              alt="Wiranium" 
+              width={120}
+              height={120}
+              style={{
+                height: '120px !important',
+                width: 'auto !important',
+                minHeight: '120px !important',
+                maxHeight: 'none !important'
+              }}
+            />
             </div>
 
-            {/* Desktop Navigation */}
+            {/* Desktop Navigation */}+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             <div className="hidden md:flex items-center space-x-8">
               <a href="#" className="text-gray-700 hover:text-[#00cc88] font-medium transition-colors duration-200">
                 Home
@@ -107,13 +375,13 @@ export default function Home() {
           {/* Value Proposition */}
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl leading-tight mb-8">
             <span className="text-[#00cc88] font-extrabold">24%</span> of{' '}
-            <span className="text-[#00cc88] font-extrabold">Shopify Store</span>'s refunds are avoidable.{' '}
+            <span className="text-[#00cc88] font-extrabold">Shopify Store</span>&apos;s refunds are avoidable.{' '}
             <span className="text-gray-900 font-extrabold">Fix it today.</span>
           </h1>
           
           {/* Subtext */}
           <p className="max-w-4xl mx-auto text-lg sm:text-xl text-gray-600 leading-relaxed mb-12">
-            Reduce refund leaks and enable smarter automated decisions with Wiranium's Return Shield. 
+            Reduce refund leaks and enable smarter automated decisions with Wiranium&apos;s Return Shield. 
             Protect your revenue and streamline your returns process with AI-powered insights.
           </p>
           
@@ -250,19 +518,21 @@ export default function Home() {
             {/* Company */}
             <div>
               <div className="flex items-center mb-4">
-                <img 
-                  src="/wirelogo.png" 
-                  alt="Wiranium" 
-                  style={{
-                    height: '50px !important', 
-                    width: 'auto !important', 
-                    minHeight: '50px !important',
-                    maxHeight: 'none !important'
-                  }}
-                />
+                            <Image 
+              src="/wirelogo.png" 
+              alt="Wiranium" 
+              width={50}
+              height={50}
+              style={{
+                height: '50px !important',
+                width: 'auto !important',
+                minHeight: '50px !important',
+                maxHeight: 'none !important'
+              }}
+            />
               </div>
               <p className="text-gray-600 text-sm">
-                Protecting your Shopify store's revenue with intelligent return management.
+                Protecting your Shopify store&apos;s revenue with intelligent return management.
               </p>
             </div>
             

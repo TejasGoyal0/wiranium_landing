@@ -3,6 +3,7 @@
 import { ArrowLeftIcon, CalendarIcon, ClockIcon, CheckIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function BookDemo() {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
@@ -127,7 +128,7 @@ export default function BookDemo() {
               <span className="text-[#00cc88]">Demo</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Schedule a personalized demo of Wiranium's return management platform to see how we can help reduce your refunds and increase profits.
+              Schedule a personalized demo of Wiranium&apos;s return management platform to see how we can help reduce your refunds and increase profits.
             </p>
           </div>
 
@@ -299,7 +300,7 @@ export default function BookDemo() {
                       onChange={handleInputChange}
                       rows={4}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00cc88] focus:border-transparent outline-none transition-all placeholder-gray-500 text-gray-900"
-                      placeholder="Tell us about your current return process and any specific challenges you're facing..."
+                      placeholder="Tell us about your current return process and any specific challenges you&apos;re facing..."
                     />
                   </div>
 
@@ -340,7 +341,7 @@ export default function BookDemo() {
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Demo Scheduled Successfully!</h2>
                 <p className="text-gray-600 mb-6">
-                  Thank you for scheduling your demo. We've sent a confirmation email with calendar invites and meeting details.
+                  Thank you for scheduling your demo. We&apos;ve sent a confirmation email with calendar invites and meeting details.
                 </p>
                 <div className="bg-gray-50 rounded-lg p-4 mb-6">
                                      <p className="text-sm text-gray-600">
@@ -369,9 +370,11 @@ export default function BookDemo() {
       <footer className="px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <div className="flex items-center justify-center mb-4">
-            <img 
+            <Image 
               src="/wirelogo.png" 
               alt="Wiranium" 
+              width={150}
+              height={150}
               style={{
                 height: '150px !important', 
                 width: 'auto !important', 
@@ -382,7 +385,7 @@ export default function BookDemo() {
             />
           </div>
           <p className="text-gray-600 text-sm">
-            Protecting your Shopify store's revenue with intelligent return management.
+            Protecting your Shopify store&apos;s revenue with intelligent return management.
           </p>
         </div>
       </footer>

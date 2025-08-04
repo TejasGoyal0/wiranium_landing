@@ -3,6 +3,7 @@
 import { ArrowLeftIcon, CheckCircleIcon, ClockIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function LaunchingSoon() {
   const [email, setEmail] = useState('');
@@ -128,7 +129,7 @@ export default function LaunchingSoon() {
               </form>
               
               <p className="text-xs text-gray-500 mt-4">
-                We'll only use your email to notify you about the launch. No spam, ever.
+                We&apos;ll only use your email to notify you about the launch. No spam, ever.
               </p>
             </div>
           ) : (
@@ -139,18 +140,18 @@ export default function LaunchingSoon() {
                     <CheckCircleIcon className="w-6 h-6 text-white" />
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">You're on the list!</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">You&apos;re on the list!</h3>
                 <p className="text-gray-600 mb-4">
-                  Thanks for joining our waitlist. We'll notify you as soon as Wiranium launches on Shopify.
+                  Thanks for joining our waitlist. We&apos;ll notify you as soon as Wiranium launches on Shopify.
                 </p>
-                <div className="text-sm text-gray-500">
-                  <p>What happens next?</p>
-                  <ul className="mt-2 space-y-1">
-                    <li>• We'll send you launch updates</li>
-                    <li>• You'll get early access when we go live</li>
-                    <li>• Exclusive discount codes will be sent to your email</li>
-                  </ul>
-                </div>
+                                  <div className="text-sm text-gray-500">
+                    <p>What happens next?</p>
+                    <ul className="mt-2 space-y-1">
+                      <li>• We&apos;ll send you launch updates</li>
+                      <li>• You&apos;ll get early access when we go live</li>
+                      <li>• Exclusive discount codes will be sent to your email</li>
+                    </ul>
+                  </div>
               </div>
             </div>
           )}
@@ -161,9 +162,11 @@ export default function LaunchingSoon() {
       <footer className="px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <div className="flex items-center justify-center mb-4">
-            <img 
+            <Image 
               src="/wirelogo.png" 
               alt="Wiranium" 
+              width={150}
+              height={150}
               style={{
                 height: '150px !important', 
                 width: 'auto !important', 
@@ -174,7 +177,7 @@ export default function LaunchingSoon() {
             />
           </div>
           <p className="text-gray-600 text-sm">
-            Protecting your Shopify store's revenue with intelligent return management.
+            Protecting your Shopify store&apos;s revenue with intelligent return management.
           </p>
         </div>
       </footer>
