@@ -1,6 +1,6 @@
 'use client';
 
-import { PlayIcon, CheckCircleIcon, ArrowRightIcon, Bars3Icon, XMarkIcon, ShoppingCartIcon, ChartBarIcon, CogIcon } from '@heroicons/react/24/outline';
+import { CheckCircleIcon, ArrowRightIcon, Bars3Icon, XMarkIcon, ShoppingCartIcon, ChartBarIcon, CogIcon } from '@heroicons/react/24/outline';
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
