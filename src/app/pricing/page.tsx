@@ -4,6 +4,7 @@ import { ArrowLeftIcon, CheckIcon, XMarkIcon } from '@heroicons/react/24/outline
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Footer from '../components/Footer';
 
 export default function Pricing() {
   const [isYearly, setIsYearly] = useState(false);
@@ -161,9 +162,11 @@ export default function Pricing() {
                      )}
                    </div>
 
-                  <Link
-                    href="/launching-soon"
-                    className={`w-full inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-xl transition-all duration-300 ${
+                                      <Link
+                      href="https://apps.shopify.com/return-shield-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`w-full inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-xl transition-all duration-300 ${
                       plan.popular
                         ? 'text-white bg-[#00cc88] hover:bg-[#00b377] shadow-lg hover:shadow-xl'
                         : 'text-gray-900 border-2 border-gray-300 hover:border-[#00cc88] hover:bg-[#00cc88] hover:text-white'
@@ -340,38 +343,19 @@ export default function Pricing() {
                 Contact us for enterprise pricing and custom solutions tailored to your specific needs.
               </p>
               <Link
-                href="/launching-soon"
+                href="https://apps.shopify.com/return-shield-1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-white bg-[#00cc88] hover:bg-[#00b377] transition-all duration-300 rounded-xl shadow-lg hover:shadow-xl"
               >
-                Contact Sales
+                Install on Shopify
               </Link>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="px-4 py-12 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <div className="flex items-center justify-center mb-4">
-            <Image 
-              src="/wirelogo.png" 
-              alt="Wiranium" 
-              width={200}
-              height={200}
-              style={{
-                height: '200px !important', 
-                width: 'auto !important', 
-                minHeight: '200px !important',
-                maxHeight: 'none !important'
-              }}
-            />
-          </div>
-          <p className="text-gray-600 text-sm">
-            Protecting your Shopify store&apos;s revenue with intelligent return management.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 } 

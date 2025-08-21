@@ -3,6 +3,7 @@
 import { ArrowLeftIcon, ShieldCheckIcon, LockClosedIcon, DocumentTextIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Image from 'next/image';
+import Footer from '../components/Footer';
 
 export default function PrivacyPolicy() {
   return (
@@ -549,24 +550,7 @@ export default function PrivacyPolicy() {
           </section>
 
           {/* Footer */}
-          <div className="border-t border-gray-200 pt-8 mt-12">
-            <div className="flex items-center justify-center space-x-4 text-sm text-gray-500">
-              <div className="flex items-center space-x-2">
-                <LockClosedIcon className="w-4 h-4" />
-                <span>Secure & Compliant</span>
-              </div>
-              <span>•</span>
-              <div className="flex items-center space-x-2">
-                <ShieldCheckIcon className="w-4 h-4" />
-                <span>GDPR & CPRA Ready</span>
-              </div>
-              <span>•</span>
-              <span>Return Shield © {new Date().getFullYear()}</span>
-            </div>
-            <p className="text-center text-xs text-gray-400 mt-4">
-              This Privacy Policy is effective as of {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} and applies to all users of the Return Shield app.
-            </p>
-          </div>
+          <Footer />
         </div>
       </div>
     </div>

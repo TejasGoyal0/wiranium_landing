@@ -4,6 +4,7 @@ import { CheckCircleIcon, ArrowRightIcon, Bars3Icon, XMarkIcon, ShoppingCartIcon
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Footer from './components/Footer';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -47,7 +48,7 @@ export default function Home() {
 
             {/* Desktop CTA Button */}
             <div className="hidden md:block">
-              <Link href="/launching-soon" className="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-[#00cc88] hover:bg-[#00b377] transition-colors duration-200 rounded-lg shadow-sm hover:shadow-md whitespace-nowrap">
+              <Link href="https://apps.shopify.com/return-shield-1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-[#00cc88] hover:bg-[#00b377] transition-colors duration-200 rounded-lg shadow-sm hover:shadow-md whitespace-nowrap">
                 Install On Shopify
               </Link>
             </div>
@@ -83,7 +84,7 @@ export default function Home() {
                   Book A Demo
                 </Link>
                 <div className="pt-4">
-                  <Link href="/launching-soon" className="w-full inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-[#00cc88] hover:bg-[#00b377] transition-colors duration-200 rounded-lg shadow-sm hover:shadow-md">
+                  <Link href="https://apps.shopify.com/return-shield-1" target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-[#00cc88] hover:bg-[#00b377] transition-colors duration-200 rounded-lg shadow-sm hover:shadow-md">
                     Install On Shopify
                   </Link>
                 </div>
@@ -138,7 +139,7 @@ export default function Home() {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/launching-soon" className="group inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#00cc88] hover:bg-[#00b377] transition-all duration-300 rounded-xl shadow-lg hover:shadow-xl hover:scale-105">
+            <Link href="https://apps.shopify.com/return-shield-1" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#00cc88] hover:bg-[#00b377] transition-all duration-300 rounded-xl shadow-lg hover:shadow-xl hover:scale-105">
               Install on Shopify
               <ArrowRightIcon className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
@@ -317,69 +318,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-50 px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Company */}
-            <div>
-              <div className="flex items-center mb-4">
-                <Image 
-                  src="/wirelogo.png" 
-                  alt="Wiranium" 
-                  width={200}
-                  height={200}
-                  style={{
-                    height: '200px !important',
-                    width: 'auto !important',
-                    minHeight: '200px !important',
-                    maxHeight: 'none !important'
-                  }}
-                />
-              </div>
-              <p className="text-gray-600 text-sm">
-                Protecting your Shopify store&apos;s revenue with intelligent return management.
-              </p>
-            </div>
-            
-            {/* Navigation Links */}
-            <div>
-              <h3 className="text-sm font-semibold text-gray-900 mb-4">Navigation</h3>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#" className="text-gray-600 hover:text-[#00cc88] transition-colors">Home</a></li>
-                <li><Link href="/pricing" className="text-gray-600 hover:text-[#00cc88] transition-colors">Pricing</Link></li>
-                <li><Link href="/book-demo" className="text-gray-600 hover:text-[#00cc88] transition-colors">Book A Demo</Link></li>
-              </ul>
-            </div>
-            
-            {/* Contact & Social */}
-            <div>
-              <h3 className="text-sm font-semibold text-gray-900 mb-4">Contact & Social</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <a href="mailto:founder@wiranium.com" className="text-gray-600 hover:text-[#00cc88] transition-colors">
-                    founder@wiranium.com
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+916375113465" className="text-gray-600 hover:text-[#00cc88] transition-colors">
-                    +91 6375113465
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-600 hover:text-[#00cc88] transition-colors">LinkedIn</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="mt-12 pt-8 border-t border-gray-200 text-center">
-            <p className="text-sm text-gray-500">
-              © 2024 Wiranium. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
