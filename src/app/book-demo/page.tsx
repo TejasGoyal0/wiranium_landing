@@ -3,57 +3,8 @@
 import { ArrowLeftIcon, CalendarIcon, ClockIcon, CheckIcon, UserGroupIcon, VideoCameraIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import Footer from '../components/Footer';
-import { useEffect } from 'react';
-
-// Declare Calendly global type
-declare global {
-  interface Window {
-    Calendly: {
-      initInlineWidget: (options: {
-        url: string;
-        parentElement: HTMLElement;
-        minWidth: string;
-        height: string;
-      }) => void;
-      initPopupWidget: (options: {
-        url: string;
-      }) => void;
-      initBadgeWidget: (options: {
-        url: string;
-        text: string;
-        color: string;
-        textColor: string;
-        branding: boolean;
-      }) => void;
-    };
-  }
-}
 
 export default function BookDemo() {
-  useEffect(() => {
-    // Load Calendly script
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    
-    document.head.appendChild(script);
-
-    return () => {
-      // Cleanup when component unmounts
-      if (document.head.contains(script)) {
-        document.head.removeChild(script);
-      }
-    };
-  }, []);
-
-  const openCalendar = () => {
-    if (window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/tejasgoyal72/30min?primary_color=00c792'
-      });
-    }
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50">
       {/* Navigation */}
@@ -128,14 +79,16 @@ export default function BookDemo() {
                 Click the button below to open the calendar and schedule your demo.
               </p>
               
-              {/* Centered Calendar Button */}
-              <button
-                onClick={openCalendar}
+              {/* Direct Calendly Link Button */}
+              <a
+                href="https://calendly.com/wiranium/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#00c792] hover:bg-[#00b377] transition-all duration-300 rounded-xl shadow-lg hover:shadow-xl hover:scale-105"
               >
                 <CalendarIcon className="w-5 h-5 mr-2" />
                 Schedule Demo
-              </button>
+              </a>
             </div>
           </div>
 
