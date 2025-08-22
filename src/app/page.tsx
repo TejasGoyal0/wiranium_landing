@@ -48,9 +48,9 @@ export default function Home() {
 
             {/* Desktop CTA Button */}
             <div className="hidden md:block">
-              <Link href="https://apps.shopify.com/return-shield-1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-[#00cc88] hover:bg-[#00b377] transition-colors duration-200 rounded-lg shadow-sm hover:shadow-md whitespace-nowrap">
+              <a href="https://apps.shopify.com/returnshield" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-[#00cc88] hover:bg-[#00b377] transition-colors duration-200 rounded-lg shadow-sm hover:shadow-md whitespace-nowrap">
                 Install On Shopify
-              </Link>
+              </a>
             </div>
 
             {/* Mobile menu button */}
@@ -84,9 +84,9 @@ export default function Home() {
                   Book A Demo
                 </Link>
                 <div className="pt-4">
-                  <Link href="https://apps.shopify.com/return-shield-1" target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-[#00cc88] hover:bg-[#00b377] transition-colors duration-200 rounded-lg shadow-sm hover:shadow-md">
+                  <a href="https://apps.shopify.com/returnshield" target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-[#00cc88] hover:bg-[#00b377] transition-colors duration-200 rounded-lg shadow-sm hover:shadow-md">
                     Install On Shopify
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -139,10 +139,10 @@ export default function Home() {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="https://apps.shopify.com/return-shield-1" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#00cc88] hover:bg-[#00b377] transition-all duration-300 rounded-xl shadow-lg hover:shadow-xl hover:scale-105">
+            <a href="https://apps.shopify.com/returnshield" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#00cc88] hover:bg-[#00b377] transition-all duration-300 rounded-xl shadow-lg hover:shadow-xl hover:scale-105">
               Install on Shopify
               <ArrowRightIcon className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </Link>
+            </a>
             <Link href="/book-demo" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-900 border-2 border-gray-300 hover:border-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300 rounded-xl">
               Book A Demo
             </Link>

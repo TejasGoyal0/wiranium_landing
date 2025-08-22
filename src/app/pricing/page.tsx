@@ -162,18 +162,18 @@ export default function Pricing() {
                      )}
                    </div>
 
-                                      <Link
-                      href="https://apps.shopify.com/return-shield-1"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`w-full inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-xl transition-all duration-300 ${
+                  <a
+                    href="https://apps.shopify.com/returnshield"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-full inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-xl transition-all duration-300 ${
                       plan.popular
                         ? 'text-white bg-[#00cc88] hover:bg-[#00b377] shadow-lg hover:shadow-xl'
-                        : 'text-gray-900 border-2 border-gray-300 hover:border-[#00cc88] hover:bg-[#00cc88] hover:text-white'
+                        : 'text-gray-900 bg-white hover:bg-gray-50 border-2 border-gray-200'
                     }`}
                   >
                     Get Started
-                  </Link>
+                  </a>
                   {!plan.isFree && (
                     <div className="mt-3 text-sm text-gray-500">
                       7-day free trial
@@ -342,14 +342,14 @@ export default function Pricing() {
               <p className="text-gray-600 mb-6">
                 Contact us for enterprise pricing and custom solutions tailored to your specific needs.
               </p>
-              <Link
-                href="https://apps.shopify.com/return-shield-1"
+              <a
+                href="https://apps.shopify.com/returnshield"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-white bg-[#00cc88] hover:bg-[#00b377] transition-all duration-300 rounded-xl shadow-lg hover:shadow-xl"
               >
                 Install on Shopify
-              </Link>
+              </a>
             </div>
           </div>
         </div>

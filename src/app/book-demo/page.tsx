@@ -40,13 +40,13 @@ export default function BookDemo() {
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-[#00cc88]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <VideoCameraIcon className="w-8 h-8 text-[#00cc88]" />
-              </div>
+                </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Live Demo</h3>
               <p className="text-gray-600 text-sm">
                 See Wiranium in action with a personalized walkthrough of your specific use case.
               </p>
-            </div>
-            
+                </div>
+
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-[#00cc88]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <UserGroupIcon className="w-8 h-8 text-[#00cc88]" />
@@ -55,25 +55,25 @@ export default function BookDemo() {
               <p className="text-gray-600 text-sm">
                 Get answers to all your questions from our return management specialists.
               </p>
-            </div>
-            
+                    </div>
+
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-[#00cc88]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <ClockIcon className="w-8 h-8 text-[#00cc88]" />
-              </div>
+                    </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">30 Minutes</h3>
               <p className="text-gray-600 text-sm">
                 Quick, focused demo that fits into your busy schedule.
               </p>
-            </div>
-          </div>
+                    </div>
+                  </div>
 
           {/* Calendly Integration */}
           <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-lg">
             <div className="text-center mb-8">
               <div className="w-20 h-20 bg-[#00cc88]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CalendarIcon className="w-10 h-10 text-[#00cc88]" />
-              </div>
+                  </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Choose Your Preferred Time</h2>
               <p className="text-gray-600 mb-6">
                 Click the button below to open the calendar and schedule your demo.
@@ -85,9 +85,9 @@ export default function BookDemo() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-[#00c792] hover:bg-[#00b377] transition-all duration-300 rounded-xl shadow-lg hover:shadow-xl hover:scale-105"
-              >
+                  >
                 <CalendarIcon className="w-5 h-5 mr-2" />
-                Schedule Demo
+                    Schedule Demo
               </a>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function BookDemo() {
                 <div className="flex items-start space-x-2">
                   <CheckIcon className="w-5 h-5 text-[#00cc88] mt-0.5 flex-shrink-0" />
                   <span>ROI calculation for your business</span>
-                </div>
+                  </div>
                 <div className="flex items-start space-x-2">
                   <CheckIcon className="w-5 h-5 text-[#00cc88] mt-0.5 flex-shrink-0" />
                   <span>Implementation timeline</span>
